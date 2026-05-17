@@ -20,7 +20,7 @@ const PatientCard = () => {
                 </Card>
                 <Card className='bg-cyan-700 text-white hover:scale-105 transition duration-300'>
                     <h1>Incredibly simple and easy to use.</h1>
-                    <h1>⭐⭐⭐⭐⭐</h1>
+                    <h1>⭐⭐⭐⭐⭐ </h1>
                     <h1>I am not great with modern apps, but this interface is so clean and straightforward. I was able to book my follow-up appointment and access my medical notes without having to ask my grandkids for help.</h1>
                     <h1>— James T., Retired</h1>
                 </Card>
