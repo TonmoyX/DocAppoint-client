@@ -2,7 +2,7 @@ import Image from 'next/image';
 import banner from '@/assets/banner.avif'
 const Banner = () => {
     return (
-        <div className='flex gap-25 mt-10 items-center mx-auto justify-center'>
+        <div className='flex gap-25 mt-10 items-center mx-auto justify-center px-20'>
             <div>
                 <p className='text-sm text-cyan-300 animate-bounce'>MEDICAL CHECKUP</p>
                 <h1 className='text-6xl mt-4 text-cyan-600 font-bold'>Best Medical Clinic For
@@ -12,7 +12,7 @@ const Banner = () => {
                 dedicated to your wellness. Find the right care, right when you need it.</p>
             </div>
             <div>
-                <Image className='w-150 h-150 rounded-2xl' src={banner} alt={'bannerImage'} width={1000} height={1000}></Image>
+                <Image className='w-150 h-150 rounded-2xl hover:scale-105 transition duration-300' src={banner} alt={'bannerImage'} width={1000} height={1000}></Image>
             </div>
         </div>
     );
