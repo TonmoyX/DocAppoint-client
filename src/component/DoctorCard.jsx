@@ -28,10 +28,10 @@ const DoctorCard = ({ doctorData }) => {
                     </div>
                     {
                         !user &&
-                        <Button className='w-full bg-cyan-500 hover:transition hover:bg-cyan-900 duration-300 text-white'><Link href={`/login`}>View Details</Link></Button>
+                        <Link href={`/login`}><Button className='w-full bg-cyan-500 hover:transition hover:bg-cyan-900 duration-300 text-white'>View Details</Button></Link>
                     }
                     {
-                        user && <Button className='w-full mt-auto bg-cyan-500 hover:transition hover:bg-cyan-900 duration-300 text-white'><Link href={`/allappoint/${data.id}`}>View Details</Link></Button>
+                        user && <Link href={`/allappoint/${data.id}`}><Button className='w-full mt-auto bg-cyan-500 hover:transition hover:bg-cyan-900 duration-300 text-white'>View Details</Button></Link>
                     }
                 </Card>
             </div>

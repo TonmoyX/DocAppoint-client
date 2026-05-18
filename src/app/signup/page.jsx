@@ -10,7 +10,7 @@ const SignUp = () => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
         const userData = Object.fromEntries(formData.entries());
-         console.log(userData)
+        //  console.log(userData)
          
          const {data, error} = await authClient.signUp.email({
           name : userData.name,
@@ -20,9 +20,9 @@ const SignUp = () => {
         });
         if(data?.user){
             // toast.success("SignUp Successfully..!!!")
-            redirect(`/`, RedirectType.push)
+            redirect(`/login`, RedirectType.push)
         }
-        console.log(data, error)
+        // console.log(data, error)
 
     }
     return (
