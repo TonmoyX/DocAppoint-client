@@ -9,12 +9,13 @@ const LoginPage = () => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
         const userData = Object.fromEntries(formData.entries());
-
+        // console.log(userData)
          const { data, error } = await authClient.signIn.email({
             email: userData.email,
             password: userData.password,
             callbackURL: '/'
     })
+    // console.log(data, error)
 }
     return (
         <div className='mx-auto justify-center mt-10 pb-10'>

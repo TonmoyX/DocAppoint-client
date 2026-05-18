@@ -36,7 +36,7 @@ const Navbar = () => {
                     {
                         data &&
                         <ul className="flex items-center gap-4">
-                            <Link href='/'><li><Image className='rounded-[50%]' src={data.image} alt="profile pic" width={60} height={60}></Image></li></Link>
+                            <Link href='/'><li><Image className='rounded-[50%]' src={data.image} alt="profile pic" width={50} height={50}></Image></li></Link>
                             <Link href='/'><li><Button onClick={handleSignOut} variant='danger'>Sign Out</Button></li></Link>
                         </ul>
                     }
