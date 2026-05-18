@@ -23,7 +23,7 @@ const Navbar = () => {
                     </div>
                     <ul className="flex items-center gap-6">
                         <li className='font-semibold'><NavLink href='/'>Home</NavLink></li>
-                        <li className='font-semibold'><NavLink href='/allappoint'>All Appoint</NavLink></li>
+                        <li className='font-semibold'><NavLink href='/allappoint'>All Appointments</NavLink></li>
                         {
                             data &&
                             <li className='font-semibold'><NavLink href='/dashboard'>Dashboard</NavLink></li>

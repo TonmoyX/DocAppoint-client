@@ -11,9 +11,18 @@ const Banner = () => {
                 We connect you with top-rated doctors and specialists <br></br>
                 dedicated to your wellness. Find the right care, right when you need it.</p>
 
-                <div className='mt-10'>
+                <div className='mt-10 flex gap-4'>
                     <div>
-                        
+                        <p className='text-4xl font-extrabold text-cyan-900'>24/7</p>
+                        <p className='text-lg font-semibold text-cyan-300'>Emergency Service</p>
+                    </div>
+                    <div>
+                        <p className='text-4xl font-extrabold text-cyan-900'>30+</p>
+                        <p className='text-lg font-semibold text-cyan-300'>Special Doctor</p>
+                    </div>
+                    <div>
+                        <p className='text-4xl font-extrabold text-cyan-900'>10K+</p>
+                        <p className='text-lg font-semibold text-cyan-300'>Booked Appointment</p>
                     </div>
                 </div>
             </div>

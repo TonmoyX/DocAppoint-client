@@ -1,22 +1,29 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
-import { Check } from "@gravity-ui/icons";
 import { Button, Card, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
 import Link from "next/link";
 import { IoLogoGoogle } from "react-icons/io";
+
+
+
 const LoginPage = () => {
     const onSubmit = async (e) => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
         const userData = Object.fromEntries(formData.entries());
         // console.log(userData)
-         const { data, error } = await authClient.signIn.email({
+        const { data, error } = await authClient.signIn.email({
             email: userData.email,
             password: userData.password,
             callbackURL: '/'
-    })
-    // console.log(data, error)
-}
+        })
+    }
+    const googleLogin = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+        redirect(`/`, RedirectType.push)
+    }
     return (
         <div className='mx-auto justify-center mt-10 pb-10'>
             <Card className="py-10 bg-cyan-200">
@@ -61,15 +68,17 @@ const LoginPage = () => {
                     </TextField>
                     <div className="flex gap-2">
                         <Button type="submit">
-                            <Check />
-                            Submit
+                            Login
                         </Button>
                         <Button type="reset" variant="secondary">
                             Reset
                         </Button>
                     </div>
                     <p className="text-center font-bold text-2xl">--------- or ---------</p>
-                    <Button className="items-center gap-2 bg-cyan-700  text-xl text-white rounded-2xl w-full"><IoLogoGoogle/>Login with google</Button>
+                    <Button className="items-center gap-2 bg-cyan-700  text-xl text-white rounded-2xl w-full" onClick={googleLogin}>
+                        <IoLogoGoogle />
+                        Login with google
+                    </Button>
                     <p className='text-center text-lg'>You have no account ? <Link href={'/signup'}><span className='text-blue-600'>SignUp</span></Link></p>
                 </Form>
             </Card>

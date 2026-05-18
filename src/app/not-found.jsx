@@ -1,7 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaExclamationTriangle } from 'react-icons/fa';
-
+export const metadata = {
+  title: "Not Found - DocAppoint ",
+  description: "A doctor appointment booking application built with Next.js and Heroui.",
+};
 const NotFoundPage = () => {
     return (
         <div className='min-h-screen flex items-center justify-center px-5'>

@@ -1,6 +1,11 @@
 import DoctorCard from '@/component/DoctorCard';
 import React from 'react';
 
+export const metadata = {
+  title: "All Appointments - DocAppoint ",
+  description: "A doctor appointment booking application built with Next.js and Heroui.",
+};
+
 const AllAppointPage = async () => {
     const res = await fetch(`http://localhost:8000/getDoctorData`,{
         cache:'no-store'

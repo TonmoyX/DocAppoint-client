@@ -3,6 +3,11 @@ import ProfilePage from '@/component/ProfilePage';
 import { Tabs } from '@heroui/react';
 import { FaExclamationTriangle } from 'react-icons/fa';
 
+export const metadata = {
+  title: "Dashboard - DocAppoint ",
+  description: "A doctor appointment booking application built with Next.js and Heroui.",
+};
+
 const Dashboard = async () => {
   const res = await fetch(`http://localhost:8000/getPatientData`, {
     method: 'GET',
