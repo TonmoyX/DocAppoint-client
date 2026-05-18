@@ -16,7 +16,7 @@ const EditModal = ({data}) => {
                body: JSON.stringify(userData)
            })
            const data = await res.json()
-           toast.success('Update Successfully !!!')
+           toast.success('Appointment Updated Successfully')
        }
        return (
            <div>

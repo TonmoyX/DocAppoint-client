@@ -1,5 +1,5 @@
 import AllAppoint from '@/component/AllAppoint';
-import Profile from '@/component/Profile';
+import ProfilePage from '@/component/ProfilePage';
 import { Tabs } from '@heroui/react';
 import { FaExclamationTriangle } from 'react-icons/fa';
 
@@ -30,9 +30,9 @@ const Dashboard = async () => {
             {
               datas.length === 0 &&
               <div className='py-20'>
-                <p ><FaExclamationTriangle className='text-8xl text-muted flex mx-auto mb-5' /></p>
+                <p ><FaExclamationTriangle className='text-8xl animate-bounce text-muted flex mx-auto mb-5' /></p>
                 <p className='text-center text-4xl font-bold'>No Appointments Yet</p>
-                <p className='text-center text-4xl font-bold mt-5'>Please Book an Appointment</p>
+                <p className='text-center text-4xl font-bold mt-5'>Please Book An Appointment</p>
               </div>
             }
             <div className='grid grid-cols-4 gap-5'>
@@ -47,9 +47,7 @@ const Dashboard = async () => {
 
           </Tabs.Panel>
           <Tabs.Panel className="pt-4 w-full" id="profile">
-            <div>
-              <Profile></Profile>
-            </div>
+              <ProfilePage></ProfilePage>
           </Tabs.Panel>
         </Tabs>
       </div>
