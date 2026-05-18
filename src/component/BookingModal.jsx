@@ -1,7 +1,23 @@
 "use client";
 import {Envelope} from "@gravity-ui/icons";
 import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
-const BookingModal = () => {
+const BookingModal = ({doctorData}) => {
+    const {name} = doctorData
+    const onSubmit = async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.currentTarget);
+        const userData = Object.fromEntries(formData.entries())
+
+        const res = await fetch(`http://localhost:8000/addPatientData`, {
+            method:'POST',
+            headers:{'content-type':'application/json'},
+            body: JSON.stringify(userData)
+        })
+        const data = await res.json()
+    }
+
+
+
     return (
         <div>
              <Modal>
@@ -22,14 +38,14 @@ const BookingModal = () => {
             </Modal.Header>
             <Modal.Body className="p-6">
               <Surface variant="default">
-                <form className="flex flex-col gap-4">
+                <form onSubmit={onSubmit} className="flex flex-col gap-4">
                   <TextField className="w-full" name="email" type="email">
                     <Label>Email</Label>
                     <Input placeholder="Enter your email" />
                   </TextField>
                   <TextField className="w-full" name="doctorName" type="text">
                     <Label>Doctor Name</Label>
-                    <Input placeholder="Enter the doctor's name" />
+                    <Input value={name} placeholder="Enter the doctor's name" />
                   </TextField>
                   <TextField className="w-full" name="gender" type="text">
                     <Label>Gender</Label>

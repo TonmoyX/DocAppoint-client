@@ -10,14 +10,13 @@ const DoctorCard = ({ doctorData }) => {
     const userData = authClient.useSession();
     const user = userData?.data?.user;
     const data = doctorData
-    console.log(data)
+    // console.log(data)
     return (
         <div>
             <div>
-
             </div>
             <div>
-                <Card className='hover:scale-105 hover:shadow-lg hover:transition hover:shadow-cyan-300 duration-300 h-120 transition'>
+                <Card className='hover:scale-105 hover:shadow-lg hover:transition hover:shadow-cyan-300 hover:duration-300 h-120 transition'>
                     <Image className='w-100 h-60 rounded-2xl' src={data.image} alt={data.name} width={1000} height={1000}></Image>
                     <div className='flex justify-between items-center'>
                         <h1 className='text-lg font-bold'>{data.name}</h1>

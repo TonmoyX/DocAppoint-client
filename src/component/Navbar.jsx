@@ -9,7 +9,7 @@ import Link from 'next/link';
 const Navbar = () => {
     const userData = authClient.useSession();
     const data = userData?.data?.user
-    console.log(data)
+    // console.log(data)
     const handleSignOut = async () => {
         await authClient.signOut();
     }
