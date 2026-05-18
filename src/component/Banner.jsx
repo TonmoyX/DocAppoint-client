@@ -10,6 +10,12 @@ const Banner = () => {
                 <p className='text-xl mt-8 font-semibold text-cyan-400'>Navigating your health should not be stressful.
                 We connect you with top-rated doctors and specialists <br></br>
                 dedicated to your wellness. Find the right care, right when you need it.</p>
+
+                <div className='mt-10'>
+                    <div>
+                        
+                    </div>
+                </div>
             </div>
             <div>
                 <Image className='w-150 h-150 rounded-2xl hover:scale-105 transition duration-300' src={banner} alt={'bannerImage'} width={1000} height={1000}></Image>

@@ -1,9 +1,10 @@
 import React from 'react';
+import { HashLoader } from 'react-spinners';
 
 const loading = () => {
     return (
         <div>
-            Loading
+          <HashLoader className='text-7xl flex mx-auto py-50' />
         </div>
     );
 };
