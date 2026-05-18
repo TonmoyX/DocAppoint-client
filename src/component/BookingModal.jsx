@@ -1,6 +1,7 @@
 "use client";
 import {Envelope} from "@gravity-ui/icons";
 import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
+import { toast } from "react-toastify";
 const BookingModal = ({doctorData}) => {
     const {name} = doctorData
     const onSubmit = async (e) => {
@@ -14,10 +15,8 @@ const BookingModal = ({doctorData}) => {
             body: JSON.stringify(userData)
         })
         const data = await res.json()
+        toast.success('Appointment Booked Successfully')
     }
-
-
-
     return (
         <div>
              <Modal>

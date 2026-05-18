@@ -12,9 +12,7 @@ const DoctorCard = ({ doctorData }) => {
     const data = doctorData
     // console.log(data)
     return (
-        <div>
-            <div>
-            </div>
+        <div >
             <div>
                 <Card className='hover:scale-105 hover:shadow-lg hover:transition hover:shadow-cyan-300 hover:duration-300 h-120 transition'>
                     <Image className='w-100 h-60 rounded-2xl' src={data.image} alt={data.name} width={1000} height={1000}></Image>

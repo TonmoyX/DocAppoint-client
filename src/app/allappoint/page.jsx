@@ -2,7 +2,7 @@ import DoctorCard from '@/component/DoctorCard';
 import React from 'react';
 
 const AllAppointPage = async () => {
-    const res = await fetch(`${process.env.BETTER_AUTH_URL}/data.json`,{
+    const res = await fetch(`http://localhost:8000/getDoctorData`,{
         cache:'no-store'
     })
     const doctorsData = await res.json()
