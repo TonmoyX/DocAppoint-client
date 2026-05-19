@@ -2,9 +2,8 @@
 import { authClient } from "@/lib/auth-client";
 import { Button, Card, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
 import Link from "next/link";
+import { redirect, RedirectType } from "next/navigation";
 import { IoLogoGoogle } from "react-icons/io";
-
-
 
 const LoginPage = () => {
     const onSubmit = async (e) => {

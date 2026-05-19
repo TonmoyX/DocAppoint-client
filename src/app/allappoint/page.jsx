@@ -1,4 +1,5 @@
 import DoctorCard from '@/component/DoctorCard';
+import SearchDoctor from '@/component/SearchDoctor';
 import React from 'react';
 
 export const metadata = {
@@ -13,11 +14,19 @@ const AllAppointPage = async () => {
     const doctorsData = await res.json()
     return (
         <div className='bg-cyan-50'>
-        <div className='grid grid-cols-4 mt-10 gap-4 px-20 pb-10'>
+            <h1 className='text-4xl text-center font-bold mb-4 text-cyan-900 pt-10'>All Appointments</h1>
+            <p className='text-lg text-center text-muted font-bold'>Find the right doctor for your needs.</p>
+            <div>
+                <SearchDoctor></SearchDoctor>
+            </div>
+
+
+
+{/* <div className='grid grid-cols-4 mt-10 gap-4 px-20 pb-10'>
             {
                 doctorsData.map(doctorData => <DoctorCard key={doctorData.id} doctorData={doctorData}></DoctorCard>)
             }
-        </div>
+        </div> */}
         </div>
     );
 };
