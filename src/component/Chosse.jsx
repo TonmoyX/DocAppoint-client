@@ -5,9 +5,9 @@ import { GiHeartBeats } from 'react-icons/gi';
 
 const Chosse = () => {
     return (
-        <div className='mx-20 mt-30 pb-10 px-20'>
-            <h1 className='text-6xl font-bold text-center text-cyan-600'>Our Specialities</h1>
-            <div className='grid mt-20 gap-10 grid-cols-4'>
+        <div className='mx-5 md:mx-20 mt-30 pb-10  md:px-20'>
+            <h1 className='text-4xl md:text-6xl font-bold text-center text-cyan-600'>Our Specialities</h1>
+            <div className='grid mt-20 gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
                 <Card className='bg-cyan-200 hover:scale-105 transition duration-300'>
                  <h1 className='flex mx-auto'><GiHeartBeats className='text-5xl mt-5'/></h1>   
                  <h1 className='text-center mt-4 text-2xl font-semibold text-cyan-900'>Cardiology Care Center</h1>   

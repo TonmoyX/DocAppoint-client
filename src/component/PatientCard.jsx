@@ -3,9 +3,9 @@ import React from 'react';
 
 const PatientCard = () => {
     return (
-        <div className='bg-cyan-100 py-10 px-20 px-20'>
-            <h1 className='text-6xl font-bold text-center text-cyan-600 mb-10'>Patient Review</h1>
-            <div className='grid grid-cols-4 gap-10'>
+        <div className='bg-cyan-100 px-5 py-10  md:px-20'>
+            <h1 className='text-4xl md:text-6xl font-bold text-center text-cyan-600 mb-10'>Patient Review</h1>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-10'>
                 <Card className='bg-cyan-700 text-white hover:scale-105 transition duration-300'>
                     <h1>Saved me hours of waiting.</h1>
                     <h1>⭐⭐⭐⭐⭐</h1>

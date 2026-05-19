@@ -6,11 +6,11 @@ import { FaFacebook } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-cyan-900 text-gray-400 px-6 md:px-16 py-16">
-      <div className="max-w-7xl mx-auto">
+      <div className="lg:max-w-7xl mx-auto">
         <div className="mb-12">
             <div className="flex items-center gap-5">
                 <Image src={'https://img.magnific.com/premium-vector/stethoscope-symbol-health-logo-silhouette-vector-white-background_931294-1816.jpg'} className='rounded-[50%]' alt={'logo'} width={80} height={80}></Image>
-          <h1 className="text-6xl md:text-7xl font-bold text-white">
+          <h1 className="text-4xl md:text-7xl font-bold text-white">
             DocAppoint
           </h1></div>
           <p className="mt-4 max-w-xl">
