@@ -35,7 +35,7 @@ const SignUp = () => {
     return (
         <div className='mx-auto justify-center mt-10 pb-10'>
             <Card className="py-10 bg-cyan-200">
-                <Form className="flex w-96 flex-col gap-4" onSubmit={onSubmit}>
+                <Form className="flex w-80 md:w-96 flex-col gap-4" onSubmit={onSubmit}>
                     <TextField
                         isRequired
                         name="name"

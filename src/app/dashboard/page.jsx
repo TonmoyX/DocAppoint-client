@@ -40,7 +40,7 @@ const Dashboard = async () => {
                 <p className='text-center text-4xl font-bold mt-5'>Please Book An Appointment</p>
               </div>
             }
-            <div className='grid grid-cols-4 gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
               {
                 datas?.map((data) => (
 

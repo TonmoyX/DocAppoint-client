@@ -5,7 +5,7 @@ const Banner = () => {
         <div className=' space-x-2 md:flex md:gap-25 mt-10 items-center mx-auto justify-center md:px-20'>
             <div className='mx-5'>
                 <p className='text-sm text-cyan-300 animate-bounce'>MEDICAL CHECKUP</p>
-                <h1 className=' text-4xl md:text-6xl mt-4 text-cyan-600 font-bold'>Best Medical Clinic For
+                <h1 className=' text-4xl md:text-4xl mt-4 text-cyan-600 font-bold'>Best Medical Clinic For
                      Your<br></br> Healthcare !</h1>
                 <p className='text-xl mt-8 font-semibold text-cyan-400'>Navigating your health should not be stressful.
                 We connect you with top-rated doctors and specialists <br></br>
@@ -27,7 +27,7 @@ const Banner = () => {
                 </div>
             </div>
             <div>
-                <Image className='w-full h-80 mt-10 md:w-150 md:h-150 rounded-2xl hover:scale-105 transition duration-300' src={banner} alt={'bannerImage'} width={1000} height={1000}></Image>
+                <Image className='mx-auto w-80 h-80 mt-10 md:w-120 md:h-80 lg:w-150 lg:h-150 rounded-2xl hover:scale-105 transition duration-300' src={banner} alt={'bannerImage'} width={1000} height={1000}></Image>
             </div>
         </div>
     );

@@ -17,7 +17,7 @@ const handleDelete = async () => {
     return (
         <div className=''>
             <div className=''>
-               <Card className=' w-80 md:w-100 lg:w-100 hover:shadow-lg hover:transition hover:shadow-cyan-300'>
+               <Card className=' w-80 md:w-90 lg:w-100 hover:shadow-lg hover:transition hover:shadow-cyan-300'>
                     <Card.Header>
                         <p className="font-bold text-2xl">{doctorName}</p>
                     </Card.Header>

@@ -8,8 +8,8 @@ const DoctorDetails = ({ doctorData }) => {
 
      return (
         <div className='py-10 mt-10'>
-            <Card className='mx-auto w-60 md:w-200 lg:w-250 hover:shadow-lg hover:transition hover:shadow-cyan-300 py-15'>
-                <div className='flex items-center gap-6 mx-auto'>
+            <Card className='mx-auto w-80 md:w-200 lg:w-250 hover:shadow-lg hover:transition hover:shadow-cyan-300 py-15'>
+                <div className=' lg:flex items-center gap-6 mx-auto'>
                 <div>
                 <Image className='rounded-2xl' src={image} alt={name} height={600} width={600} />
                 </div>

@@ -15,6 +15,7 @@ const Navbar = () => {
 
     const handleSignOut = async () => {
         await authClient.signOut();
+        callbackUrl: "/"
     }
 
     const toggleMenu = () => {
