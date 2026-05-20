@@ -74,10 +74,10 @@ const SignUp = () => {
                         type="password"
                         validate={(value) => {
                             if (value.length < 6) {
-                                return "Password must be at least 8 characters";
+                                return "Password must be at least 6 characters";
                             }
-                            if (!/[A-Z]/.test(value)) {
-                                return "Password must contain at least one uppercase letter";
+                            if (!/[A-Z]/.test(value) || !/[a-z]/.test(value)) {
+                                return "Password must contain at least one uppercase letter and one lowercase letter";
                             }
                             // if (!/[]/.test(value)) {
                             //     return "Password must contain at least one number";
