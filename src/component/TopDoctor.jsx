@@ -2,7 +2,7 @@ import React from 'react';
 import DoctorCard from './DoctorCard';
 
 const TopDoctor = async () => {
-    const res = await fetch(`http://localhost:8000/getDoctorData`,{
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/getDoctorData`,{
         cache:'no-store'
     })
     const doctorsData = await res.json()

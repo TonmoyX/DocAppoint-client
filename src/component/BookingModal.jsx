@@ -9,7 +9,7 @@ const BookingModal = ({doctorData}) => {
         const formData = new FormData(e.currentTarget);
         const userData = Object.fromEntries(formData.entries())
 
-        const res = await fetch(`http://localhost:8000/addPatientData`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/addPatientData`, {
             method:'POST',
             headers:{'content-type':'application/json'},
             body: JSON.stringify(userData)

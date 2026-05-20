@@ -18,7 +18,7 @@ const ProfilePage = () => {
             image: formData.get('image')
         };
 
-        const res = await fetch(`http://localhost:8000/updateUserData/${user?.id}`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/updateUserData/${user?.id}`, {
             method: 'PATCH',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(userData)

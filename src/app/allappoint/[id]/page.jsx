@@ -8,7 +8,7 @@ export const metadata = {
 
 const DoctorDetailsPage = async ({params}) => {
     const {id} = await params
-    const res = await fetch(`http://localhost:8000/getDoctorData/${id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/getDoctorData/${id}`, {
         cache:'no-store'
     })
     const doctors = await res.json();
